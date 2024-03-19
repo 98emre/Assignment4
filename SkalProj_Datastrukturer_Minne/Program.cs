@@ -217,7 +217,7 @@ namespace SkalProj_Datastrukturer_Minne
 
         static string PrintTheStack( Stack<string> stack )
         {
-            if(stack.Count <= 0)
+            if(stack.Count == 0)
             {
                 return "Empty";
             }
@@ -323,7 +323,7 @@ namespace SkalProj_Datastrukturer_Minne
                 Console.Write("What do you want to enter: ");
                 string input = Console.ReadLine()!;
 
-                if (string.IsNullOrWhiteSpace(input) || input.Trim().Length == 0)
+                if (string.IsNullOrWhiteSpace(input) || input.Trim().Length <= 0)
                 {
                     throw new ArgumentException("You cannot enter an empty value.");
                 }
