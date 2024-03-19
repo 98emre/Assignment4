@@ -1,0 +1,64 @@
+
+
+Övning 4 Frågor
+
+Fråga: Hur fungerar stacken och heapen? Förklara gärna med exempel eller skiss på dess grundläggande funktion
+Svar: Stacken och heapen är två minnesområden som används i programmering för att lagra data. 
+
+	  Stack är när en sak går in först och går ut sist. 
+	  Tänk du har hög av böcker, där du kan bara lägga till eller ta bort böcker från toppen av högen,
+	  När man lägger till en bok på högen så placeras den övers och när man tar bort en bok så tas det översta
+	  boken först. 
+
+
+	  Heap är som ett stor lagringsuttrymme där du kan lägga till och ta bort i vilken ordning som helt, 
+	  utan att behöva tänka på strikta regler för palcering och bortaggninen. Det är som en yta 
+	  där du kan placera och flytta saker firtt enligt ditt behov. När det kommer till programmering
+	  tex en array som har en stor 5 så måste vi öka den när den har nått max och äldre programmeringsspårk
+	  som C så måste vi fria minnet.
+
+
+Fråga: Vad är Value Types respektive Reference Types och vad skiljer dem åt?
+Svar: Value types sparar ett värde direkt i en varaibel och Refrence Types gör inte det där den referar till värdet.
+
+Fråga: Följande metoder (se bild nedan) genererar olika svar. Den första returnerar 3, den andra returnerar 4, varför? 
+Svar: 
+
+I det första exemplet när värdet av x kopieras till variabeln y, är det bara värdet som kopieras,
+inte referensen till x. Därför ändrar ändringen av värdet på y inte värdet på x, eftersom de är separata variabler.
+
+I det andra exemplet  där x och y refererar till samma instans av MyInt, ändras värdet av x.MyValue 
+när värdet av y.MyValue ändras. Detta beror på att de delar samma referens till objektet, vilket gör att ändringar 
+som görs på en variabel också påverkar den andra.
+
+
+
+Fråga: När ökar listans kapacitet? (Alltså den underliggande arrayens storlek)
+Svar: Den ökar kapcitet så fort antalet items har överskridit kapacitet
+
+Fråga: Med hur mycket ökar kapaciteten?
+Svar: Kapaciteten blir dubbelt så stor 
+
+Fråga: Varför ökar inte listans kapacitet i samma takt som element läggs till?
+Svar: De för att vi inte vill listan ska alltid kopieras, annars kommer man använda mer av prestandan.
+
+Fråga: Minskar kapaciteten när element tas bort ur listan?
+Svar: Nej listans kapcitet minskar inte 
+
+Fråga: När är det då fördelaktigt att använda en egendefinierad array istället för en lista?
+Svar: Det är bra när man behver maximal prestanda, minnesanvändning och array är snabbare när det gäller söka data.
+
+Fråga: Simulera ännu en gång ICA-kön på papper. Denna gång med en stack. 
+	   Varför är det inte så smart att använda en stack i det här fallet?
+
+Svar: Stack ser till att den som går in först kommer gå ut sist. 
+	  I exemplet så ser vi att kalle går in först och han kommer gå ut sist i kön.
+	  Och varje gång en ny person står i kö så kommer Kalle vänta och han kommer ut om inte flera personer kommer.
+
+
+Fråga: Vilken datastruktur använder du? 
+Svar: Jag använder en stack för att lösa uppgiften.
+
+
+
+
