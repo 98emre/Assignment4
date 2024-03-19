@@ -132,7 +132,7 @@ namespace SkalProj_Datastrukturer_Minne
         }
 
 
-        private static string PrintTheQueue(Queue<string> queue)
+        static string PrintTheQueue(Queue<string> queue)
         {
             if (queue.Count == 0)
             {
